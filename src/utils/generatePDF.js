@@ -10,12 +10,21 @@ const generatePDF = async () => {
 
   const pdf = new jsPDF("p", "mm", "a4");
 
-  const width = pdf.internal.pageSize.getWidth();
+  const width =
+    pdf.internal.pageSize.getWidth();
 
-  const height =
-    (canvas.height * width) / canvas.width;
+    const height =
+    (canvas.height * width) /
+    canvas.width;
 
-  pdf.addImage(imgData, "PNG", 0, 0, width, height);
+  pdf.addImage(
+    imgData,
+    "PNG",
+    0,
+    0,
+    width,
+    height
+  );
 
   pdf.save("AI-Assessment-Report.pdf");
 };

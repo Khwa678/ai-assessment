@@ -46,19 +46,25 @@ const Home = () => {
 
             <div className="flex flex-wrap gap-5 mt-10">
 
-              <Link to="/assessment">
-                <Button>
-                  Get Started
-                </Button>
-              </Link>
+  <Link to="/assessment">
+    <Button>
+      Get Started
+    </Button>
+  </Link>
 
-              <a href="#features">
-                <Button className="bg-white/10 border border-white/10">
-                  Explore Features
-                </Button>
-              </a>
+  <a href="#features">
+    <Button className="bg-white/10 border border-white/10">
+      Explore Features
+    </Button>
+  </a>
 
-            </div>
+  <Link to="/email-automation">
+    <Button className="bg-gradient-to-r from-pink-500 to-purple-600">
+      Email Automation
+    </Button>
+  </Link>
+
+</div>
 
           </motion.div>
 

@@ -1,7 +1,7 @@
 // FILE: src/routes/AppRoutes.jsx
 
 import { Routes, Route } from "react-router-dom";
-
+import EmailAutomation from "../pages/EmailAutomation";
 import Home from "../pages/Home";
 import Assessment from "../pages/Assessment";
 import Results from "../pages/Results";
@@ -14,7 +14,13 @@ return ( <Routes>
 <Route path="/assessment" element={<Assessment />} />
 <Route path="/results" element={<Results />} />
 <Route path="/success" element={<Success />} />
-<Route path="*" element={<NotFound />} /> </Routes>
+<Route path="*" element={<NotFound />} />
+<Route
+  path="/email-automation"
+  element={<EmailAutomation />}
+/>
+
+ </Routes>
 );
 };
 
